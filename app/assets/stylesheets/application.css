@@ -1,0 +1,84 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Montserrat');
+
+html {
+  display: flex;
+  flex-direction: inherit;
+  width: 100%;
+  justify-content: center;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 80%;
+}
+
+header, footer {
+   display: flex;
+   flex-flow: column wrap;
+   align-content: center;
+}
+ 
+footer {
+   margin-top: 2em;
+   font-size: .7em;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+li {
+   list-style: none;
+   padding: 10px 20px 10px 20px;
+}
+
+.height {
+  height: 70px;
+}
+
+a[href] {
+   color: purple;
+   text-decoration: none;
+}
+
+nav li:hover {
+  background-color: lightslategray;
+  border-radius: 20px;
+}
+
+table td {
+  padding: 1.5em;
+}
+
+table th { 
+  background-color: silver;
+  border-bottom: 3px solid black;
+}
+
+[src] {
+  float: left;
+  padding: 1em;
+  border-radius: 25px;
+}
